@@ -1,4 +1,4 @@
-package Main;
+
 
 import java.awt.Color;
 import java.awt.Font;
@@ -15,7 +15,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class Estacionamento {
+public class Aula20160809 {
      
 	 static Font letra = new Font ("ARIAL",Font.BOLD,15);
 	 static Font letra1 = new Font ("ARIAL",Font.BOLD,20);
@@ -1463,18 +1463,16 @@ public class Estacionamento {
     }
      
      static void sorteiaVagaS(){
-    	int valor = (int) (Math.random() * 3);
  		int valor1 = (int) (Math.random() * 24);
 
  		if (local[valor1] == true) {
- 			local[valor] = false;
+ 			local[valor1] = false;
 
  		} else if (local[valor1] == false) {
  			sorteiaVagaS();
  		} else {
  			JOptionPane.showMessageDialog(null, "Andar livre!");
  		}
-
  	}	 
      }
 	
